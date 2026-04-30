@@ -145,7 +145,7 @@ class DigitalClock(QWidget):
         self.hide()
 
 
-def generate_clock_data(num_designs=10, times_per_design=300, output_dir="clock_screenshots", csv_file="clock_times.csv"):
+def generate_clock_data(num_designs=6, times_per_design=250, output_dir="clock_screenshots", csv_file="clock_times.csv"):
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
 
@@ -230,5 +230,5 @@ def generate_clock_data(num_designs=10, times_per_design=300, output_dir="clock_
     print(f"\nGenerated {total_samples} clock screenshots and saved to {csv_file}")
 
 if __name__ == "__main__":
-    # Generate 10 designs with 300 times each = 3000 total samples
-    generate_clock_data(num_designs=10, times_per_design=300)
+    # Generate 6 designs with 250 times each = 1500 total samples
+    generate_clock_data(num_designs=6, times_per_design=250)
